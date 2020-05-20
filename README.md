@@ -6,11 +6,12 @@ React JS (Hooks-Material-UI-Charts-js)
 **API used** : [Covid19 Mathdro Api](https://covid19.mathdro.id/api)
 
 **Setup:** `run npm i && npm start` 
+
 **Dependencies** `npm install --save axios react-chartjs-2 react-countup classnames`
 
 **PROJECT STRUCTURE** 
-COMPONENTS 
-* CARDS
+## Components
+* CARDS (Covid numbers as Cards `npm install --save @material-ui/core`)
     - Cards.jsx
     - Cards.module.css
 * CHARTS 
@@ -19,3 +20,19 @@ COMPONENTS
 * COUNTRY
     - Country.jsx
     - Country.module.cs
+## API 
+* index.js
+    - axios (fetching covid API) 
+    ```js
+    import axios from 'axios';
+
+    const url = 'https//covid19.mathdro.id/api';
+    ```
+    - Main data to user from API
+    - CONFIRMED 
+    - RECOVERED
+    - DEATHS
+    - LASTUPDATE
+
+
+
