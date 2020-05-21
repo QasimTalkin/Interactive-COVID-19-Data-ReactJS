@@ -18,7 +18,7 @@ const Country = () => {
 
     return (
        <div>
-       <FormControl>
+       <FormControl className={styles.container}>
         <NativeSelect>
             <option value = "global"> Global </option>
             {fetchedCountries.map((country, i)=><option value={i}>{country}</option>)}
