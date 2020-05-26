@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/COVID19-Global-Visulaizer-React-JS/static/css/main.7ab072ca.chunk.css",
+    "main.js": "/COVID19-Global-Visulaizer-React-JS/static/js/main.9df1389e.chunk.js",
+    "main.js.map": "/COVID19-Global-Visulaizer-React-JS/static/js/main.9df1389e.chunk.js.map",
+    "runtime-main.js": "/COVID19-Global-Visulaizer-React-JS/static/js/runtime-main.339d6332.js",
+    "runtime-main.js.map": "/COVID19-Global-Visulaizer-React-JS/static/js/runtime-main.339d6332.js.map",
+    "static/js/2.16cc8b0a.chunk.js": "/COVID19-Global-Visulaizer-React-JS/static/js/2.16cc8b0a.chunk.js",
+    "static/js/2.16cc8b0a.chunk.js.map": "/COVID19-Global-Visulaizer-React-JS/static/js/2.16cc8b0a.chunk.js.map",
+    "index.html": "/COVID19-Global-Visulaizer-React-JS/index.html",
+    "precache-manifest.7684731fdb29c65f27cbb5c0038761c8.js": "/COVID19-Global-Visulaizer-React-JS/precache-manifest.7684731fdb29c65f27cbb5c0038761c8.js",
+    "service-worker.js": "/COVID19-Global-Visulaizer-React-JS/service-worker.js",
+    "static/css/main.7ab072ca.chunk.css.map": "/COVID19-Global-Visulaizer-React-JS/static/css/main.7ab072ca.chunk.css.map",
+    "static/js/2.16cc8b0a.chunk.js.LICENSE.txt": "/COVID19-Global-Visulaizer-React-JS/static/js/2.16cc8b0a.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/COVID19-Global-Visulaizer-React-JS/static/media/logo.6b43a751.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.339d6332.js",
+    "static/js/2.16cc8b0a.chunk.js",
+    "static/css/main.7ab072ca.chunk.css",
+    "static/js/main.9df1389e.chunk.js"
+  ]
+}
