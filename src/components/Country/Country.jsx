@@ -4,7 +4,7 @@ import {NativeSelect, FormControl} from '@material-ui/core'
 import styles from './Country.module.css'
 import {fetchCountries} from '../../api'
 
-const Country = () => {
+const Country = ({handelCountryChange}) => {
    const [fetchedCountries, setFetchedCountries] = useState([]);
 
     useEffect( () => {
@@ -14,14 +14,12 @@ const Country = () => {
        fetchCountriesAPI();
     }, [setFetchedCountries]);
 
-    console.log("Fetched Countries : " + fetchedCountries);
-
     return (
        <div>
        <FormControl className={styles.container}>
-        <NativeSelect>
-            <option value = "global"> Global </option>
-            {fetchedCountries.map((country, i)=><option value={i}>{country}</option>)}
+        <NativeSelect defaultValue="" onChange={(e) => handelCountryChange(e.target.value)}>
+            <option value = ""> Global </option>
+            {fetchedCountries.map((country, i)=><option key={i} value={country}>{country}</option>)}
         </NativeSelect>
        </FormControl>
        

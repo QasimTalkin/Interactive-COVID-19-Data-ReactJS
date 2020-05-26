@@ -7,6 +7,7 @@ class App extends React.Component {
 
     state = {
         data : {},
+        country : '',
     }
 
     async componentDidMount(){
@@ -15,16 +16,23 @@ class App extends React.Component {
         this.setState({data:fetchedData})
     }
 
+    handelCountryChange = async (country) => {
+        const fetchedData = await fetchData(country);
+        this.setState({data:fetchedData, country:country})
+        //console.log(country);
+    }
+
     render () {
-        const {data} = this.state; // fetched data to be passed as props 
+        
+        const {data, country} = this.state; // fetched data to be passed as props 
         return (
             <div className={styles.container}>
                 <Cards data={data} />
-                <Country />
-                <Chart />
+                <Country handelCountryChange={this.handelCountryChange}/>
+                <Chart data={data} country={country}/>
            </div>
         )
     }
 }
-
+ 
 export default App;
