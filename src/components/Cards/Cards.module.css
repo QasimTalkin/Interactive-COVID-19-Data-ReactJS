@@ -21,3 +21,10 @@
     border-bottom: 18px solid rgba(206, 46, 46, 0.925);
 }
 
+@media (max-width:770px){
+    .card{
+        margin:2% 0 !important;
+
+    }
+
+}

@@ -62,7 +62,6 @@ const Chart = ({data:{confirmed, recovered, deaths}, country}) => {
             options = {{
                 
                           title:{display:true, text:`Current State in ${country}`},
-                
 
             }}
         /> 
