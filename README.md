@@ -2,7 +2,7 @@
 An interactive COVID-19 visualizer (coronavirus) of  countries around the world based on the most recent cases.
 
 React JS (Hooks-Material-UI-Charts-js)
-#### [Live link](ttp://qasimtalkin.github.io/COVID19-Global-Visulaizer-React-JS)
+[Live link](ttp://qasimtalkin.github.io/COVID19-Global-Visulaizer-React-JS)
 
 **API used** : [Covid19 Mathdro Api](https://covid19.mathdro.id/api)
 
