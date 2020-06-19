@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7d5465c18bfd7d258ac582b21ffe27f",
+    "revision": "2e1eb64f9c2933bbec9b234fb1e62329",
     "url": "/Interactive-COVID-19-Data-ReactJS/index.html"
   },
   {
-    "revision": "c0668865257824c38c6c",
+    "revision": "5757b622a983f652a6f0",
     "url": "/Interactive-COVID-19-Data-ReactJS/static/css/main.7ab072ca.chunk.css"
   },
   {
-    "revision": "98b1b5e87a2990d2c1c4",
-    "url": "/Interactive-COVID-19-Data-ReactJS/static/js/2.6f231393.chunk.js"
+    "revision": "0241ae8f77b800caba3b",
+    "url": "/Interactive-COVID-19-Data-ReactJS/static/js/2.7da97c91.chunk.js"
   },
   {
     "revision": "176852ae27885dfd7559e0fb4b332d24",
-    "url": "/Interactive-COVID-19-Data-ReactJS/static/js/2.6f231393.chunk.js.LICENSE.txt"
+    "url": "/Interactive-COVID-19-Data-ReactJS/static/js/2.7da97c91.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c0668865257824c38c6c",
-    "url": "/Interactive-COVID-19-Data-ReactJS/static/js/main.521a5a38.chunk.js"
+    "revision": "5757b622a983f652a6f0",
+    "url": "/Interactive-COVID-19-Data-ReactJS/static/js/main.0cfd59f5.chunk.js"
   },
   {
     "revision": "706a9a72388afb5275b0",
