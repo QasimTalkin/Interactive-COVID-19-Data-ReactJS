@@ -29,9 +29,10 @@ export const fetchDailyData  = async () => {
         const modData = data.map((dailyData)=>({
             confirmed:dailyData.confirmed.total,
             deaths:dailyData.deaths.total,
+            recovered:dailyData.recovered.total,
             date: dailyData.reportDate
         }));
-
+        console.log("Daily data : " + modData);
         return modData;
     } catch (error) {
         console.log(error)
@@ -48,3 +49,35 @@ export const fetchCountries = async () => {
         console.log(error)
     }
 }
+
+// data for our cards 
+
+export const fetchCountryData = async (country) => {
+
+    let countryUrl = `https://api.covid19api.com/total/country/canada`;
+
+    //data based on country 
+    if (country){
+         countryUrl = `https://api.covid19api.com/total/country/${country}`;
+    }
+
+    try {
+        const {data} = await axios.get(countryUrl);
+
+
+        const modData = data.map((countryData)=>({
+            country:countryData.Country,
+            confirmed:countryData.Confirmed,
+            deaths:countryData.Deaths,
+            recovered:countryData.Recovered,
+            active:countryData.Active,
+            date:countryData.Date,
+        }));
+
+
+        return {modData};
+    } catch (error) {
+        console.log(error)
+    }
+}
+

@@ -47,7 +47,7 @@ const Chart = ({data:{confirmed, recovered, deaths}, country}) => {
     const doughnutChart = (
         confirmed 
         ?(
-        <Doughnut 
+        <Doughnut
             data= {{
                 labels:['Infected', 'Recovered', 'Death'],
                 datasets: [
@@ -60,18 +60,15 @@ const Chart = ({data:{confirmed, recovered, deaths}, country}) => {
             }}
 
             options = {{
-                
-                          title:{display:true, text:`Current State in ${country}`},
-
+                title:{display:true, text:`Current State in ${country}`},
             }}
         /> 
         ) : null
 
-    );  
-            console.log(country);
+    );  // doughnut chart 
+
      return (
        <div className={styles.container}>
-          
             {country ? doughnutChart:lineChart}
        </div>
     )

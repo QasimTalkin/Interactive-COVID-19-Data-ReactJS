@@ -1,7 +1,7 @@
 import React from 'react';
 import {Cards, Country, Chart} from './components';
 import styles from './App.module.css';
-import { fetchData } from './api';
+import { fetchData, fetchCountryData } from './api';
 import logo from './images/logo.png'
 class App extends React.Component {
 
@@ -18,8 +18,10 @@ class App extends React.Component {
 
     handelCountryChange = async (country) => {
         const fetchedData = await fetchData(country);
-        this.setState({data:fetchedData, country:country})
-        //console.log(country);
+        this.setState({data:fetchedData, country:country});
+        //const fetchedCountryData = await fetchCountryData(country);
+        //this.setState({data:fetchedCountryData, country:country});
+        //console.log("From app.js : " + fetchedCountryData);
     }
 
     render () {
