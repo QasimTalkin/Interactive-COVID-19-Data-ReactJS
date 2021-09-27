@@ -25,7 +25,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Recovered</Typography>
                         <Typography variant="h5"> 
-                            <CountUp start = {recovered.value-5000} end ={recovered.value} duration={2} separator=","/>
+                           {if (recovered.value==0) { 'Invalid API data' } } <CountUp start = {recovered.value-5000} end ={recovered.value} duration={2} separator=","/>
                         </Typography>
                         <Typography color = "textSecondary"> {new Date(lastUpdate).toString().slice(0,15) }</Typography>
                         <Typography color = "textSecondary"> {new Date(lastUpdate).toString().slice(15,28) }</Typography>
