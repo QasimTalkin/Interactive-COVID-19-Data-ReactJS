@@ -7,6 +7,12 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
      if (!confirmed){
          return "Loading.."
      }
+     recoverTag = "Recovered"
+     if (recovered.value == 0 ) {
+     recoverTag = "Invalid API - Recovered"
+     }
+          
+     
     return (
         
         <div className = {styles.container}>
@@ -23,7 +29,7 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
                 </Grid>
                 <Grid item component={Card} xs={12} md={3}  className = {cx(styles.card, styles.recovered)} >
                     <CardContent>
-                        <Typography color="textSecondary" gutterBottom>Recovered</Typography>
+                        <Typography color="textSecondary" gutterBottom>{recoverTag}</Typography>
                         <Typography variant="h5"> 
                            {if (recovered.value==0) { 'Invalid API data' } } <CountUp start = {recovered.value-5000} end ={recovered.value} duration={2} separator=","/>
                         </Typography>
